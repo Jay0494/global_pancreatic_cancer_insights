@@ -35,7 +35,10 @@ Data was extracted from a trusted source on Kaggle, containing approximately 50,
 3. **Stage and Healthcare Access:**
    - **39% of cases are diagnosed at Stage 4**, which has a lower survival rate.
    - Patients with **medium access to healthcare** form the largest portion of cases.
+---
+![Screenshot_20250204-135452_Power BI](https://github.com/user-attachments/assets/822e41d3-a1da-47da-968a-42972ca0a597)
 
+---
 4. **Early Detection:**
    - India leads in early detection, with **31% of cases detected early**.
    - Detection rates are consistent across gender (30.19% male, 30.25% female) and across urban (30.19%) and rural (30.29%) populations.
