@@ -16,6 +16,11 @@ Data was extracted from a trusted source on Kaggle, containing approximately 50,
 - South Africa
 
 ### **Key Insights**
+
+---
+![Screenshot_20250204-133403_Power BI](https://github.com/user-attachments/assets/c7aeca00-1129-4c56-8b28-fdebb57b6e77)
+
+---
 1. **Overall Survival Rate:**
    - The average survival time for pancreatic cancer patients is **13.9 months**.
    - India has the **highest survival rate** at **13.33%**.
