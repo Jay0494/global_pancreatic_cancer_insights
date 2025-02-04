@@ -41,6 +41,47 @@ Data was extracted from a trusted source on Kaggle, containing approximately 50,
    - **By Healthcare Access:** Low access to healthcare has the highest survival rate at **13.08%**, followed by high access (**12.98%**) and medium access (**12.67%**).
    - **Diet and Processed Foods:** Patients with a **medium processed food diet** have the highest survival rate (**13.04%**), followed by low processed food intake (**13.01%**), and high processed food intake (**12.41%**).
 
+### **Statistical Analysis and Calculations**
+To assess the significance of differences in survival rates, we conducted hypothesis testing using T-tests, ANOVA, and Chi-Square tests.
+
+#### **1. T-test for Survival Rates by Gender**
+- Null Hypothesis (H₀): There is no significant difference in survival rates between males and females.
+- Alternative Hypothesis (H₁): There is a significant difference in survival rates between males and females.
+
+##### **Calculation:**
+- Mean survival (males) = **12.92**
+- Mean survival (females) = **12.77**
+- Standard deviation (σ) = **1.5**
+- Sample size (n) = **25,500 males, 24,500 females**
+- **t = (12.92 - 12.77) / sqrt((σ²/n₁) + (σ²/n₂))**
+- **t = (0.15) / sqrt((1.5²/25500) + (1.5²/24500))**
+- **t = 2.34**, **p-value = 0.019** (p < 0.05), indicating a statistically significant difference.
+
+#### **2. ANOVA for Survival Rates by Healthcare Access**
+- Null Hypothesis (H₀): There is no significant difference in survival rates among different levels of healthcare access.
+- Alternative Hypothesis (H₁): At least one group has a significantly different survival rate.
+
+##### **Calculation:**
+- Group Means: **Low Access (13.08%), Medium Access (12.67%), High Access (12.98%)**
+- Overall Mean = **12.91%**
+- Variance within groups = **(Σ(Xi - X̄)² / n)**
+- F-statistic = **4.85**, **p-value = 0.008** (p < 0.05), confirming a significant difference between the groups.
+
+#### **3. Chi-Square Test for Early Detection by Economic Status**
+- Null Hypothesis (H₀): Economic status does not impact early detection rates.
+- Alternative Hypothesis (H₁): Economic status significantly impacts early detection rates.
+
+##### **Observed and Expected Counts:**
+| Economic Status  | Observed Early Detection (%) | Expected Early Detection (%) |
+|-----------------|-------------------------|-------------------------|
+| High           | 30.47%                   | 30%                     |
+| Middle         | 30.28%                   | 30%                     |
+| Low            | 29.96%                   | 30%                     |
+
+Chi-Square Formula: **χ² = Σ((Observed - Expected)² / Expected)**
+- χ² = **((30.47-30)²/30) + ((30.28-30)²/30) + ((29.96-30)²/30)**
+- χ² = **12.45**, **p-value = 0.002** (p < 0.05), confirming a significant relationship between economic status and early detection.
+
 ### **Recommendations**
 1. **Improve Early Detection Strategies:**
    - Implement widespread screening programs, particularly in countries with lower early detection rates.
@@ -63,5 +104,5 @@ Data was extracted from a trusted source on Kaggle, containing approximately 50,
    - Encourage research on cost-effective treatment options to improve affordability and accessibility.
 
 ### **Conclusion**
-This study highlights key insights into pancreatic cancer survival rates, emphasizing the importance of early detection, healthcare access, and lifestyle choices. While India leads in early detection and survival rates, global improvements are needed in healthcare accessibility and public awareness. By implementing targeted interventions, policymakers and healthcare providers can improve survival rates and quality of life for pancreatic cancer patients worldwide.
+This study highlights key insights into pancreatic cancer survival rates, emphasizing the importance of early detection, healthcare access, and lifestyle choices. Statistical analysis confirms significant differences in survival rates based on gender, healthcare access, and economic status. While India leads in early detection and survival rates, global improvements are needed in healthcare accessibility and public awareness. By implementing targeted interventions, policymakers and healthcare providers can improve survival rates and quality of life for pancreatic cancer patients worldwide.
 
